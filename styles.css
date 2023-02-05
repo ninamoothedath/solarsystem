@@ -147,6 +147,7 @@ body{
 
 .visible{
 	opacity:100% !important;
+	cursor:default;
 }
 
 .exit{
