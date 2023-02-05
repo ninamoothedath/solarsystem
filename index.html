@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HackSC Project</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body onload="loadFunction()">
+
+
+    <div class="intro">
+      <img id="title" src="img/TitleScreen.png">
+    </div>
+
+    <button id="begin" onclick="BEGIN()">Begin</button>
+
+
+    <div class="actual">
+      <div class="pickAPlanet 2 3 4 5 6 7 8 9" id="Mercury" onclick="Mercury()">
+        <img src="img/Mercury.png">
+      </div>
+
+      <div class="pickAPlanet 1 3 4 5 6 7 8 9" id="Venus" onclick="Venus()">
+        <img src="img/Venus.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 4 5 6 7 8 9" id="Earth" onclick="Earth()">
+        <img src="img/Earth.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 5 6 7 8 9" id="Mars" onclick="Mars()">
+        <img src="img/Mars.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 4 5 6 7 8" id="Sun" onclick="Sun()">
+        <img src="img/Sun.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 4 6 7 8 9" id="Jupiter" onclick="Jupiter()">
+        <img src="img/Jupiter.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 4 5 7 8 9" id="Saturn" onclick="Saturn()">
+        <img src="img/SaturnBig.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 4 5 6 8 9" id="Uranus" onclick="Uranus()">
+        <img src="img/UranusBig.png">
+      </div>
+
+      <div class="pickAPlanet 1 2 3 4 5 6 7 9" id="Neptune" onclick="Neptune()">
+        <img src="img/NeptuneBig.png">
+      </div>
+    </div>
+
+    <div class="text" id="merctext">
+        <h2>Mercury</h2>
+
+        <p>Mercury is the closest planet to the sun! It's the smallest planet, but don't understimate it, because it's also the fastest!</p>
+
+        <p>Watch this video to learn some about one of the lesser-known features that sets Mercury apart from other planets</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/SumDHcnCRuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="ventext">
+        <h2>Venus</h2>
+
+        <p>Venus is the second planet from the sun, and it's sure to catch your eye if you're out stargazing because it's the brightest natural object in the night sky!</p>
+
+        <p>Watch this video if you're curious about how humans could theoretically teraform Venus to live on!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/G-WO-z-QuWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="eartext">
+        <h2>Earth</h2>
+
+        <p>If this was a map, there'd be a "You are Here" sticker! Earth is our home and the only planet (that we know of) that has life. It's host to  vast oceans, dense forests, and over 8 billion incredible humans!</p>
+
+        <p>You might think you know everything about our planet's place and movement in the solar system, this video might be able to show you a new perspective:</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/IJhgZBn-LHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="marstext">
+        <h2>Mars</h2>
+
+        <p>Mars, also called the Red Planet, is the fourth planet from the sun. Because it has some similarities to Earth, some have believed it might have life, but so far martians only exist in the movies. </p>
+
+        <p>Since Mars has similarities with Earth, there's been lots of exploration on the planet. Watch this video to learn about how Mars rovers work to do that important work!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/7zpojhD4hpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="juptext">
+        <h2>Jupiter</h2>
+
+        <p>Jupiter is the fifth planet from the sun, and it's the biggest planet in the solar system! It's one of the gas giants, meaning unlike the four that come before it, it's made mostly of gas! </p>
+
+        <p>One of the most recognizable things about Jupiter is the big red spot it has! Check out this video to learn about what it is!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/499R500kHOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="sattext">
+        <h2>Saturn</h2>
+
+        <p>Saturn is the sixth planet from the sun, and it's rings set it apart right away! Many of the days of the week are named after things in space, but Saturn is one of the best examples, with Satur-day!</p>
+
+        <p>Saturn's rings are mostly made of ice, but how did they form? Watch this video to find out!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/6Bv8g5xBJSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="urtext">
+        <h2>Uranus</h2>
+
+        <p>Uranus is the seventh planet from the sun, and it's the first of the ice giants. You might not be able to tell just from looking at it, but unlike the rest of the planets, it spins on it's side!</p>
+
+        <p>Want to learn about more of the things that set Uranus apart, aside from how people giggle at its name? Check out this video!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/tCmC0XOKO5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="neptext">
+        <h2>Neptune</h2>
+
+        <p>Saturn is the eighth and final planet in the solar system (sorry Pluto). Because of how far out it is, it's also called the lonely, planet, but don't worry, because it has 14 moons to keep it company!</p>
+
+        <p>Even though it's so far away, astronomers have learnt about what's below Neptune's surface. Watch this video to learn more</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/xxqOZndycsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button>  
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+    <div class="text" id="suntext">
+        <h2>Sun</h2>
+
+        <p>The sun: the center of our solar system, the star that lights up our days and the provider of energy that helps life on earth survive. The sun is a very important part of our solar system, and we wouldn't be here without it!</p>
+
+        <p>It can be hard to picture just how big and far apart the sun and planets are, so here's a video of a demonstration to help you understand just how big our solar system is!</p>
+
+        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/zR3Igc3Rhfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <button class="back" onclick="loadPlanets()">Back</button> 
+        <button class="exit" onclick="exit()">Exit</button> 
+    </div>
+
+    <img id="END" src="img/END.png">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
