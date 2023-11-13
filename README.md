@@ -1,2 +1,2 @@
 # solarsystem
-[link](https://ninina357.github.io/solarsystem/)
+[link](https://ninamoothedath.github.io/solarsystem/)
